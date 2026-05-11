@@ -13,7 +13,7 @@ export default function App() {
   const t = translations[language];
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-950 dark:bg-slate-950 dark:text-white">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 text-slate-950 dark:from-slate-950 dark:via-slate-900 dark:to-indigo-950 dark:text-white">
       <Header language={language} setLanguage={setLanguage} t={t} />
       <Skills t={t} />
       <Experience t={t} />

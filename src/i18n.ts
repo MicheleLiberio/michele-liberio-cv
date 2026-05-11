@@ -31,6 +31,7 @@ export type Translation = {
   contactTitle: string;
   contactDescription: string;
   contactButton: string;
+  downloadPdfButton: string;
   education: EducationItem[];
   experiences: ExperienceItem[];
 };
@@ -53,6 +54,7 @@ export const translations: Record<Language, Translation> = {
     contactDescription:
       "Sono disponibile per opportunit\u00e0 come Full Stack Developer o Backend Developer.",
     contactButton: "Contattami",
+    downloadPdfButton: "Scarica PDF",
     education: [
       {
         title: "Laurea Magistrale in Matematica",
@@ -153,6 +155,7 @@ export const translations: Record<Language, Translation> = {
     contactDescription:
       "Available for opportunities as Full Stack Developer or Backend Developer.",
     contactButton: "Contact Me",
+    downloadPdfButton: "Download PDF",
     education: [
       {
         title: "Master's Degree in Mathematics",

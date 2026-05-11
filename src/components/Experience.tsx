@@ -14,7 +14,7 @@ export function Experience({ t }: ExperienceProps) {
         {t.experiences.map((experience) => (
           <article
             key={`${experience.company}-${experience.period}`}
-            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900 md:p-8"
+            className="rounded-3xl border border-blue-100 bg-white/80 p-6 shadow-sm backdrop-blur dark:border-slate-800 dark:bg-slate-900/80 md:p-8"
           >
             <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
               <div>

@@ -1,5 +1,5 @@
 import type { Dispatch, SetStateAction } from "react";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Download, Mail, MapPin, Phone } from "lucide-react";
 import { profile } from "../data/profile";
 import type { Language, Translation } from "../i18n";
 import { LanguageToggle } from "./LanguageToggle";
@@ -11,6 +11,10 @@ type HeaderProps = {
 };
 
 export function Header({ language, setLanguage, t }: HeaderProps) {
+  const handleDownloadPdf = () => {
+    window.print();
+  };
+
   return (
     <header className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-14 md:flex-row md:items-center md:justify-between lg:px-8">
       <div>
@@ -58,6 +62,13 @@ export function Header({ language, setLanguage, t }: HeaderProps) {
           >
             GitHub
           </a>
+          {false && <button
+            type="button"
+            onClick={handleDownloadPdf}
+            className="no-print mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-slate-950 px-4 py-2.5 font-semibold text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+          >
+            <Download size={16} /> {t.downloadPdfButton}
+          </button>}
         </div>
       </div>
     </header>

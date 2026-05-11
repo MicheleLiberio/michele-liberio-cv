@@ -15,7 +15,7 @@ export function Skills({ t }: SkillsProps) {
         {Object.entries(skills).map(([category, items]) => (
           <div
             key={category}
-            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+            className="rounded-3xl border border-blue-100 bg-white/80 p-6 shadow-sm backdrop-blur dark:border-slate-800 dark:bg-slate-900/80"
           >
             <h3 className="mb-4 font-bold text-slate-950 dark:text-white">{category}</h3>
             <div className="flex flex-wrap gap-2">

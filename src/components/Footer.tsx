@@ -9,7 +9,7 @@ type FooterProps = {
 export function Footer({ t }: FooterProps) {
   return (
     <footer className="mx-auto max-w-6xl px-6 pb-14 pt-8 lg:px-8">
-      <div className="rounded-3xl bg-slate-950 p-8 text-white dark:bg-white dark:text-slate-950">
+      <div className="rounded-3xl bg-gradient-to-r from-slate-950 to-indigo-950 p-8 text-white shadow-lg">
         <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="text-2xl font-bold">{t.contactTitle}</h2>

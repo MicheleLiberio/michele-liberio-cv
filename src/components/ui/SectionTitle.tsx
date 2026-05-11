@@ -10,7 +10,7 @@ export function SectionTitle({ children }: SectionTitleProps) {
       <h2 className="text-2xl font-bold tracking-tight text-slate-950 dark:text-white">
         {children}
       </h2>
-      <div className="mt-2 h-1 w-12 rounded-full bg-slate-950 dark:bg-white" />
+      <div className="mt-2 h-1 w-12 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600" />
     </div>
   );
 }
